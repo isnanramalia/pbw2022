@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-	<meta charset="utf-8">
+<meta charset="utf-8">
 	<head style="text-align:center">
 		<title>Multimedia - HTML 5</title>
 	</head>
+
 	<body style="text-align:center">
-		<h2>Belajar Multimedia - HTML 5</h2>
+		<h1>Belajar Multimedia - HTML 5</h1>
 		<p>
 			<button onclick="playVid()" type="button">Play Video </button>
 			<button onclick="pauseVid()" type="button">Pause Video </button>
@@ -17,9 +18,17 @@
 		<p>
 			<video width="420" height="320" id="myVideo">
 			<source src="video.mp4" type="video/mp4">
-			Browser not support..
 			</video>
-		<br><iframe width="560" height="315" src="https://www.youtube.com/embed/ZmDBbnmKpqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<video width="420" height="320" id="myVideo">
+				<source src="video.mp4" type="video/mp4">
+				</video>
+		<br>
+		<iframe width="420" height="320"
+			src="https://www.youtube.com/embed/tgbNymZ7vqY">
+		</iframe>
+		<iframe width="420" height="320"
+			src="https://youtu.be/cii6ruuycQA">
+		</iframe>
 		</p>
 	<script>
 	var vid = document.getElementById("myVideo");
