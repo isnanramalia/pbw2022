@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="utf-8">
+	<head style="text-align:center">
+		<title>Multimedia - HTML 5</title>
+	</head>
+	<body style="text-align:center">
+		<h2>Belajar Multimedia - HTML 5</h2>
+		<p>
+			<button onclick="playVid()" type="button">Play Video </button>
+			<button onclick="pauseVid()" type="button">Pause Video </button>
+			<button onclick="durationVid()" type="button">Duration Video</button>
+			<button onclick="checkControls()" type="button">Check Controls</button>
+			<button onclick="disableControls()" type="button">Disable Controls</button>
+			<button onclick="enableControls()" type="button">Enable Controls</button>
+		</p>
+		<p>
+			<video width="420" height="320" id="myVideo">
+			<source src="video.mp4" type="video/mp4">
+			Browser not support..
+			</video>
+		<br><iframe width="560" height="315" src="https://www.youtube.com/embed/ZmDBbnmKpqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</p>
+	<script>
+	var vid = document.getElementById("myVideo");
+	
+	function playVid() {
+		vid.play();
+	}
+	
+	function pauseVid() {
+		vid.pause();
+	}
+	
+	function  durationVid() {
+		alert(vid.duration);
+	}
+	
+	function  checkControls() {
+		alert(vid.controls);
+	}
+	
+	function  disableControls() {
+		vid.duration = false;
+		vid.load();
+	}
+	
+	function  enableControls() {
+		vid.controls = true;
+		vid.load();
+	}
+	</script>
+	</body>
+</html>
