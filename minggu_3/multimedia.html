@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
-	<head style="text-align:center">
+
+	<head>
 		<title>Multimedia - HTML 5</title>
+		<link rel="stylesheet" type="text/css" href="multimedia.css">
 	</head>
 
 	<body style="text-align:center">
 		<h1>Belajar Multimedia - HTML 5</h1>
 		<p>
+			<!--video utama-->
+			<video width="420" height="320" id="myVideo">
+				<source src="video.mp4" type="video/mp4">
+			</video>
+			<!--buttom video pertama-->
 			<button onclick="playVid()" type="button">Play Video </button>
 			<button onclick="pauseVid()" type="button">Pause Video </button>
 			<button onclick="durationVid()" type="button">Duration Video</button>
@@ -16,13 +23,6 @@
 			<button onclick="enableControls()" type="button">Enable Controls</button>
 		</p>
 		<p>
-			<video width="420" height="320" id="myVideo">
-			<source src="video.mp4" type="video/mp4">
-			</video>
-			<video width="420" height="320" id="myVideo">
-				<source src="video.mp4" type="video/mp4">
-				</video>
-		<br>
 		<iframe width="420" height="320"
 			src="https://www.youtube.com/embed/tgbNymZ7vqY">
 		</iframe>
@@ -31,33 +31,7 @@
 		</iframe>
 		</p>
 	<script>
-	var vid = document.getElementById("myVideo");
 	
-	function playVid() {
-		vid.play();
-	}
-	
-	function pauseVid() {
-		vid.pause();
-	}
-	
-	function  durationVid() {
-		alert(vid.duration);
-	}
-	
-	function  checkControls() {
-		alert(vid.controls);
-	}
-	
-	function  disableControls() {
-		vid.duration = false;
-		vid.load();
-	}
-	
-	function  enableControls() {
-		vid.controls = true;
-		vid.load();
-	}
 	</script>
 	</body>
 </html>
