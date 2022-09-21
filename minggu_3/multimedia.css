@@ -1,0 +1,27 @@
+var vid = document.getElementById("myVideo");
+	
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+
+function  durationVid() {
+    alert(vid.duration);
+}
+
+function  checkControls() {
+    alert(vid.controls);
+}
+
+function  disableControls() {
+    vid.duration = false;
+    vid.load();
+}
+
+function  enableControls() {
+    vid.controls = true;
+    vid.load();
+}
