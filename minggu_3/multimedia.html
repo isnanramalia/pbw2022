@@ -1,93 +1,104 @@
 <!DOCTYPE html>
 <html lang="id">
 <meta charset="utf-8">
+<!--PROJEK MULTIMEDIA HTML 5 
+	ISNA NUR AMALIA
+	A11.2022.14330
+	13 - 19 AGST 2022 
+	MINGGU 3 PBW
+-->
 
-	<head>
-		<title>Multimedia - HTML 5</title>
-		<link rel="stylesheet" type="text/css" href="multimedia.css">
-	</head>
+<head>
+	<title>Multimedia - HTML 5</title>
+	<link rel="stylesheet" type="text/css" href="multimedia.css">
+	<link rel="icon" href="logo.png">
+</head>
 
-	<body style="text-align:center">
-		<div>
-		<h1 style="font-size:95px;">Belajar Multimedia - HTML 5</h1>
-	</div>
-		<p>
-			<!--video utama-->
-			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
-			<h3>Video local</h3>
-			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>			<video id="myVideo">
-				<source src="video.mp4" type="video/mp4">
-			</video>
+<body style="text-align:center">
+	<h1 style="font-size:95px;">Belajar Multimedia - HTML 5</h1>
+	<p>
+		<!--video utama-->
+	<h2><u>Video local</u></h2>
+	<h2> <video id="myVideo">
+			<source src="video.mp4" type="video/mp4">
+		</video>
+		<!--buttom video pertama-->
 		<br>
-			<!--buttom video pertama-->
-			<button onclick="playVid()" type="button">Play Video </button>
-			<button onclick="pauseVid()" type="button">Pause Video </button>
-			<button onclick="durationVid()" type="button">Duration Video</button>
-			<button onclick="checkControls()" type="button">Check Controls</button>
-			<button onclick="disableControls()" type="button">Disable Controls</button>
-			<button onclick="enableControls()" type="button">Enable Controls</button>
+		<button onclick="playVid()" type="button">Play Video </button>
+		<button onclick="pauseVid()" type="button">Pause Video </button>
+		<button onclick="durationVid()" type="button">Duration Video</button>
+		<button onclick="checkControls()" type="button">Check Controls</button>
+		<button onclick="disableControls()" type="button">Disable Controls</button>
+		<button onclick="enableControls()" type="button">Enable Controls</button>
 		</p>
-		<p>
-			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>			
-			<h3>Video online - YouTube</h3>
-			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
-			<iframe width="420" height="320"
-			src="https://www.youtube.com/embed/tgbNymZ7vqY">
-			</iframe>
-			<iframe width="420" height="320"
-			src="https://www.youtube.com/embed/tgbNymZ7vqY">
-			</iframe>
-			<iframe width="420" height="320"
-			src="https://www.youtube.com/embed/tgbNymZ7vqY">
+	</h2>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2><u>Video online - YouTube</u></h2>
+	<p>
+		<iframe width="420" height="320" src="https://www.youtube.com/embed/tgbNymZ7vqY">
 		</iframe>
-		</p>
-		<p>
-			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
-			<h3>Audio local</h3>
-			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
-			<audio controls>
-				<source src="1step.mp3" type="audio/mp3">
-			</audio>
-			<h5>audio 1 - Olivia Rodrigo</h5>
-			<audio controls>
-				<source src="1step.mp3" type="audio/mp3">
-			</audio>
-			<h5>audio 2 - Olivia Rodrigo</h5>
-			<audio controls>
-				<source src="1step.mp3" type="audio/mp3">
-			</audio>
-			<h5>audio 3 - Olivia Rodrigo</h5>
-		</p>
+		<iframe width="420" height="320" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+		</iframe>
+		<iframe width="420" height="320" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+		</iframe>
+	</p>
+	<p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	<h2><u>Audio local</u></h2>
+	<audio controls>
+		<source src="1step.mp3" type="audio/mp3">
+	</audio>
+	<h5>audio 1 - Olivia Rodrigo</h5>
+	<audio controls>
+		<source src="1step.mp3" type="audio/mp3">
+	</audio>
+	<h5>audio 2 - Olivia Rodrigo</h5>
+	<audio controls>
+		<source src="1step.mp3" type="audio/mp3">
+	</audio>
+	<h5>audio 3 - Olivia Rodrigo</h5>
+	</p>
 
 
 	<script>
 		var vid = document.getElementById("myVideo");
-		
+
 		function playVid() {
 			vid.play();
 		}
-		
+
 		function pauseVid() {
 			vid.pause();
 		}
-		
-		function  durationVid() {
+
+		function durationVid() {
 			alert(vid.duration);
 		}
-		
-		function  checkControls() {
+
+		function checkControls() {
 			alert(vid.controls);
 		}
-		
-		function  disableControls() {
+
+		function disableControls() {
 			vid.duration = false;
 			vid.load();
 		}
-		
-		function  enableControls() {
+
+		function enableControls() {
 			vid.controls = true;
 			vid.load();
 		}
 	</script>
-	</body>
+</body>
+
 </html>
