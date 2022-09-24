@@ -81,5 +81,10 @@ td {
 }
 
 .tr-table-dua {
-    background-color: #20485a;
+    background-color: #20485A;
+}
+
+.tr-dua-banyak {
+    padding: 8px;
+    border: 1px solid #ddd;
 }
