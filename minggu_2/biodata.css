@@ -1,0 +1,14 @@
+body {
+    background-color: aliceblue;
+    font-family: Arial;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+td {
+    padding: 10px;
+}
