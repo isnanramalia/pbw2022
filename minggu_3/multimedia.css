@@ -1,27 +1,7 @@
-var vid = document.getElementById("myVideo");
-	
-function playVid() {
-    vid.play();
+div {
+    background-color: rgb(186, 185, 185);
 }
 
-function pauseVid() {
-    vid.pause();
-}
-
-function  durationVid() {
-    alert(vid.duration);
-}
-
-function  checkControls() {
-    alert(vid.controls);
-}
-
-function  disableControls() {
-    vid.duration = false;
-    vid.load();
-}
-
-function  enableControls() {
-    vid.controls = true;
-    vid.load();
+body {
+    background-color: aliceblue;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <meta charset="utf-8">
 
 	<head>
@@ -8,12 +8,17 @@
 	</head>
 
 	<body style="text-align:center">
-		<h1>Belajar Multimedia - HTML 5</h1>
+		<div>
+		<h1 style="font-size:95px;">Belajar Multimedia - HTML 5</h1>
+	</div>
 		<p>
 			<!--video utama-->
-			<video width="420" height="320" id="myVideo">
+			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+			<h3>Video local</h3>
+			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>			<video id="myVideo">
 				<source src="video.mp4" type="video/mp4">
 			</video>
+		<br>
 			<!--buttom video pertama-->
 			<button onclick="playVid()" type="button">Play Video </button>
 			<button onclick="pauseVid()" type="button">Pause Video </button>
@@ -23,15 +28,66 @@
 			<button onclick="enableControls()" type="button">Enable Controls</button>
 		</p>
 		<p>
-		<iframe width="420" height="320"
+			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>			
+			<h3>Video online - YouTube</h3>
+			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+			<iframe width="420" height="320"
+			src="https://www.youtube.com/embed/tgbNymZ7vqY">
+			</iframe>
+			<iframe width="420" height="320"
+			src="https://www.youtube.com/embed/tgbNymZ7vqY">
+			</iframe>
+			<iframe width="420" height="320"
 			src="https://www.youtube.com/embed/tgbNymZ7vqY">
 		</iframe>
-		<iframe width="420" height="320"
-			src="https://youtu.be/cii6ruuycQA">
-		</iframe>
 		</p>
+		<p>
+			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+			<h3>Audio local</h3>
+			<h3>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+			<audio controls>
+				<source src="1step.mp3" type="audio/mp3">
+			</audio>
+			<h5>audio 1 - Olivia Rodrigo</h5>
+			<audio controls>
+				<source src="1step.mp3" type="audio/mp3">
+			</audio>
+			<h5>audio 2 - Olivia Rodrigo</h5>
+			<audio controls>
+				<source src="1step.mp3" type="audio/mp3">
+			</audio>
+			<h5>audio 3 - Olivia Rodrigo</h5>
+		</p>
+
+
 	<script>
-	
+		var vid = document.getElementById("myVideo");
+		
+		function playVid() {
+			vid.play();
+		}
+		
+		function pauseVid() {
+			vid.pause();
+		}
+		
+		function  durationVid() {
+			alert(vid.duration);
+		}
+		
+		function  checkControls() {
+			alert(vid.controls);
+		}
+		
+		function  disableControls() {
+			vid.duration = false;
+			vid.load();
+		}
+		
+		function  enableControls() {
+			vid.controls = true;
+			vid.load();
+		}
 	</script>
 	</body>
 </html>
