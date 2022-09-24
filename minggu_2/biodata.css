@@ -1,14 +1,85 @@
 body {
     background-color: aliceblue;
     font-family: Arial;
-
-}
-
-h1 {
-    text-align: center;
-    font-size: 100px;
+    font-size: 13px;
 }
 
 td {
     padding: 10px;
+}
+
+.headline {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.table-satu {
+    width: 720px;
+    margin: auto;
+}
+
+.tr-satu {
+    vertical-align: top;
+}
+
+.td-satu {
+    width: 25%;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+.foto-mahasiswa {
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #fff;
+}
+
+.red-line {
+    width: 62.5%;
+    padding: 0px 15px 15px;
+    border-top: 2px solid #d9534f;
+}
+
+.table-dua {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.td-name {
+    padding: 8px;
+}
+
+.td-banyak {
+    padding: 8px;
+    border-top: 1px solid #ddd;
+}
+
+/*ini agar texs biodata ngepas ke atas*/
+.td-dua {
+    width: 10%;
+    padding: 15px;
+}
+
+.td-jadwalKRS {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.h2-jadwalKRS {
+    font-weight: normal;
+}
+
+.table-dua {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tr-table-dua {
+    background-color: #20485a;
 }
