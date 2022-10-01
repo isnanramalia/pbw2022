@@ -1,46 +1,51 @@
 <DOCTYPE html>
-<html>
+	<html>
+
 	<head>
 		<title>Element Form - HTML 5</title>
 	</head>
+
 	<body>
 		<h1>HTML 5 - Form</h1>
-		<form name="fmhs" method="post" action="proses.php">
+		<form id="form1" name="form1" method="post" action="proses.php">
 			<table>
 				<tr>
 					<td>NIM</td>
-					<td><input type="number" required></td>
+					<td><input type "number" name="fnim"></td>
 				</tr>
 				<tr>
 					<td>Nama</td>
-					<td><input type="text" required></td>
+					<td><input type "text" name="fnama"></td>
 				</tr>
 				<tr>
 					<td>Tgl Lahir</td>
-					<td><input type="date" required></td>
+					<td><input type="date" name="ftgllahir"></td>
 				</tr>
 				<tr>
 					<td>Program Studi</td>
 					<td>
-						<select>
-							<option value="" required>Pilih Prodi</option>
-							<option value="A11" required>S1 - Teknik Informatika</option>
-							<option value="A12" required>S1 - Sistem Informasi</option>
-							<option value="A22" required>D4 - Teknik Informatika</option>
+						<select name="fprodi">
+							<option value="">Pilih Prodi</option>
+							<option value="A11">S1 - Teknik Informatika</option>
+							<option value="A12">S1 - Sistem Informasi</option>
+							<option value="A22">D3 - Teknik Informatika</option>
 						</select>
 					</td>
 				</tr>
 				<tr>
 					<td>Bidang Minat</td>
 					<td>
-						<input type="checkbox" required><label>Web Programing</label><br>
-						<input type="checkbox" required><label>Mobile Programing</label><br>
-						<input type="checkbox" required><label>Data Science</label>
+						<input type="checkbox" name="hobby1" value="101">
+						<label for="hobby1">Web Programing</label><br>
+						<input type="checkbox" name="hobby2" value="102">
+						<label for="hobby2">Mobile Programing</label><br>
+						<input type="checkbox" name="hobby3" value="103">
+						<label for="hobby3">Data Science</label>
 					</td>
 				</tr>
 				<tr>
 					<td>Berkas CV</td>
-					<td><input type="file" required</td>
+					<td><input type="file" name="ffile"></td>
 				</tr>
 				<tr>
 					<td align="right"><input type="submit"></td>
