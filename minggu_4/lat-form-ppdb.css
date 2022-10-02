@@ -1,5 +1,8 @@
 table {
     border-collapse: collapse;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 tr:hover {
@@ -12,4 +15,8 @@ th {
 
 .alamat {
     text-indent: 0.5in;
+}
+
+.tdNomor {
+    text-align: center;
 }
