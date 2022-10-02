@@ -16,110 +16,185 @@
     <!--tr=parent (membuat baris), td=child (membuat sel di baris), -->
     <form id="form1" name="form1" method="post" action="proses.php"></form>
     <table border="1" cellpadding="10">
-        <tr class="tr1">
-            <td><b>NO.</b></td>
-            <td><b>INFO PENDAFTARAN</b></td>
+        <tr>
+            <th><b>NO.</b></th>
+            <th colspan="3"><b>INFO PENDAFTARAN</b></th>
         </tr>
         <tr>
             <td>1</td>
-            <td>NISN: <input type="number" name="fnisn"></td>
+            <td>NISN</td>
+            <td>:</td>
+            <td><input type="number" name="fnisn" placeholder="input NISN.."></td>
         </tr>
         <tr>
             <td>2</td>
-            <td>Asal Sekolah<input type="number" name="fasalsch"></td>
+            <td>Asal Sekolah</td>
+            <td>:</td>
+            <td><input type="text" name="fasalsch" placeholder="input asal sekolah.."></td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Tahun Lulus<input type="number" name="fthnlulus"></td>
-            </td>
+            <td>Tahun Lulus</td>
+            <td>:</td>
+            <td><input type="number" max="2022" name="fthnlulus" placeholder="input tahun lulus..">
         </tr>
-        <tr class="trbold">
-            <td colspan="2"><b>DATA CALON PESERTA</b></td>
+        <tr>
+            <th colspan="4"><b>DATA CALON PESERTA</b></th>
         </tr>
         <tr>
             <td>4</td>
             <td>Nama Lengkap</td>
+            <td>:</td>
+            <td><input type="text" name="fnamalengkap" placeholder="input nama lengkap.."></td>
         </tr>
         <tr>
             <td>5</td>
             <td>NIK</td>
+            <td>:</td>
+            <td><input type="number" name="fnik" placeholder="input NIK.."></td>
         </tr>
         <tr>
             <td>6</td>
             <td>Tempat/Tanggal Lahir</td>
+            <td>:</td>
+            <td>
+                <input type="text" name="ftempatlahir" placeholder="input tempat lahir..">
+                <input type="date" name="fborndate">
+            </td>
         </tr>
         <tr>
             <td>7</td>
             <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="fgender" value="man">Laki-laki
+                <input type="radio" name="fgender" value="woman">Perempuan
+            </td>
         </tr>
         <tr>
             <td>8</td>
             <td>Alamat</td>
+            <td>:</td>
+            <td><input type="text" name="falamat" placeholder="input alamat.."></td>
         </tr>
-        <tr class="tr3">
+        <tr>
             <td rowspan="4"></td>
-            <td>Desa/Kel.</td>
+            <td class="alamat">Desa/Kel.</td>
+            <td>:</td>
+            <td><input type="text" name="fdesa" placeholder="input kelurahan.."></td>
         </tr>
-        <tr class="tr3">
-            <td>Kecamatan</td>
+        <tr>
+            <td class="alamat">Kecamatan</td>
+            <td>:</td>
+            <td><input type="text" name="fkec" placeholder="input kecamatan.."></td>
         </tr>
-        <tr class="tr3">
-            <td>Kabupaten</td>
+        <tr>
+            <td class="alamat">Kabupaten</td>
+            <td>:</td>
+            <td><input type="text" name="fkab" placeholder="input kabupaten.."></td>
         </tr>
-        <tr class="tr3">
-            <td>Provinsi</td>
+        <tr>
+            <td class="alamat">Provinsi</td>
+            <td>:</td>
+            <td><input type="text" name="fprovinsi" placeholder="input provinsi.."></td>
         </tr>
         <tr>
             <td>9</td>
             <td>E-mail Aktif</td>
+            <td>:</td>
+            <td><input type="text/number" name="femail" placeholder="input email.."></td>
         </tr>
-        <tr class="trbold">
-            <td colspan="2"><b>DATA ORANG TUA</b> <i>(lampirkan KK)</i></b></td>
+        <tr>
+            <th colspan="4"><b>DATA ORANG TUA</b> <i>(lampirkan KK)</i></b></td>
         </tr>
         <tr>
             <td>10</td>
-            <td>Nomor Kartu Keluarga</td>
+            <td style=>Nomor Kartu Keluarga</td>
+            <td>:</td>
+            <td><input type="number" name="fKK" placeholder="input nomor KK.."></td>
         </tr>
         <tr>
             <td>11</td>
             <td>Nama Ayah Kandung</td>
+            <td>:</td>
+            <td><input type="text" name="fayah" placeholder="input nama ayah.."></td>
         </tr>
         <tr>
             <td>12</td>
             <td>Agama</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="konghucu">Konghucu</option>
+                    <option value="other">Lainnya..</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>13</td>
             <td>Pekerjaan</td>
+            <td>:</td>
+            <td><input type="text" name="fjobayah" placeholder="input pekerjaan ayah.."></td>
         </tr>
         <tr>
             <td>14</td>
             <td>Nama Ibu Kandung</td>
+            <td>:</td>
+            <td><input type="text" name="fibu" placeholder="input nama ibu.."></td>
         </tr>
         <tr>
             <td>15</td>
             <td>Agama</td>
+            <td>:</td>
+            <td>
+                <select>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="konghucu">Konghucu</option>
+                    <option value="other">Lainnya..</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>16</td>
             <td>Pekerjaan</td>
+            <td>:</td>
+            <td><input type="text" name="fjobibu" placeholder="input pekerjaan ibu.."></td>
         </tr>
         <tr>
             <td>17</td>
-            <td>Alamat Orang Tahun</td>
+            <td>Alamat Orang Tua</td>
+            <td>:</td>
+            <td><input name="alamatOrtu" placeholder="input alamat ortu.."></td>
         </tr>
-        <tr class="tr4">
+        <tr>
             <td rowspan="4"></td>
-            <td>Desa/Kel.</td>
+            <td class="alamat">Desa/Kel.</td>
+            <td>:</td>
+            <td><input type="text" name="fdesaortu" placeholder="input kelurahan ortu.."></td>
         </tr>
-        <tr class="tr4">
-            <td>Kecamatan</td>
+        <tr>
+            <td class="alamat">Kecamatan</td>
+            <td>:</td>
+            <td><input type="text" name="fKecOrtu" placeholder="input kecamatan ortu.."></td>
         </tr>
-        <tr class="tr4">
-            <td>Kabupaten</td>
+        <tr>
+            <td class="alamat">Kabupaten</td>
+            <td>:</td>
+            <td><input type="text" name="fKabOrtu" placeholder="input kabupaten ortu.."></td>
         </tr>
-        <tr class="tr4">
-            <td>Provinsi</td>
+        <tr>
+            <td class="alamat">Provinsi</td>
+            <td>:</td>
+            <td><input type="text" name="fProvOrtu" placeholder="input provinsi ortu.."></td>
         </tr>
     </table>
 </body>
