@@ -13,10 +13,21 @@ th {
     background-color: rgb(176, 174, 174);
 }
 
-.alamat {
-    text-indent: 0.5in;
-}
-
 .tdNomor {
     text-align: center;
+}
+
+.border {
+    border-left: none;
+    border-right: none;
+}
+
+.borderujung {
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+#alamat {
+    text-indent: 0.5in;
 }
