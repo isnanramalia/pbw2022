@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seputar audio</title>
+</head>
+
+<body>
+    <h1>Contoh audio di Web</h1>
+    <!--AUDIO BERBAGAI VERSI-->
+    <audio controls>
+        <!--gunakan (/) jika audio ada di beda folder dmna folder didalam folder file
+        gunakan (.) jika audio ada di beda folder sebelum letak folder-->
+        <source src="atribut/1step.mp3" type="audio/mp3">
+        Browsermu tidak mendukung sayy, upgrade dongs!
+    </audio>
+    <audio autoplay="true">
+        <!--otomatis memutar di web-->
+        <source src="atribut/1step.mp3" type="audio/mp3">
+        Browsermu tidak mendukung sayy, upgrade dongs!
+    </audio>
+    <audio loop="true">
+        <!--otomatis mengulang jika selesai-->
+        <source src="atribut/1step.mp3" type="audio/mp3">
+        Browsermu tidak mendukung sayy, upgrade dongs!
+    </audio>
+    <audio muted="true">
+        <!--tidak akan ada suaranya wkwk-->
+        <source src="atribut/1step.mp3" type="audio/mp3">
+        Browsermu tidak mendukung sayy, upgrade dongs!
+    </audio>
+
+    <!--AUDIO SEBAGAI BACKGROUND-->
+    <audio hidden autoplay loop>
+        <source src="atribut/1step.mp3" type="audio/mp3">
+    </audio>
+
+</body>
+
+</html>
