@@ -1,0 +1,16 @@
+* {
+    font-family: Roboto;
+    background-color: whitesmoke;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.main {
+    color: rgb(7, 249, 168);
+}
+
+.not-main {
+    color: #000;
+}
