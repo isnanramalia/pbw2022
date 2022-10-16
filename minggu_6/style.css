@@ -20,13 +20,6 @@ nav {
     flex-wrap: wrap;
 }
 
-nav .logo {
-    color: #CDCFC0;
-    font-size: 35px;
-    font-weight: 600;
-    font-family: 'Fuzzy Bubbles';
-}
-
 nav div img {
     height: 60px;
 }
@@ -206,3 +199,64 @@ footer {
 
 
 /* ------------------------------- INDEX HTML ----------------------------------------*/
+.div-index {
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.div-index h1 {
+    font-size: 55px;
+    color: #231F20;
+}
+
+.div p {
+    color: black;
+    line-height: 22px;
+}
+
+.div-index a {
+    background-color: #ccda73;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #231F20;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.image-index {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.image-index img {
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    padding-left: 70rem;
+}
+
+.girl {
+    height: 70%;
+}
+
+
+.girl:hover {
+    bottom: 10%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ------------------------------- ABOUT HTML ----------------------------------------*/
