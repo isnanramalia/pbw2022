@@ -10,13 +10,13 @@
     <!--link rel untuk menghubungkan ke file lain/sumber lain-->
     <link rel="stylesheet" href="style.css">
     <!-- link rel font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- link rel favicon -->
     <link rel="icon" type="image/x-icon" href="atribut/icon.png">
     <title>Portofolio Isna</title>
 </head>
+
+
 
 
 <nav>
@@ -36,23 +36,29 @@
     </ul>
 </nav>
 
+
+
 <body>
     <hr />
     <section>
         <h1 class="text-align">Contact me</h1><br><br>
-        <form class="text-align">
+        <div class="garis-bawah"></div>
+        <form class="text-align" id="contact-form">
             <label for="name">Name</label><br>
-            <input type="name" name="fname" placeholder="your name.."><br><br>
+            <input class="contact-input" type="name" name="fname" placeholder="your name.."><br><br>
             <label for="email">E-mail</label><br>
-            <input type="email" name="femail" placeholder="email adress.."><br><br>
+            <input class="contact-input" type="email" name="femail" placeholder="email adress.."><br><br>
             <label for="message">Message</label><br>
-            <textarea name="fmessage" placeholder="write your message.." rows="4" cols="80"></textarea>
-            <br><br><br>
-            <input type="submit" value="send">
+            <textarea class="contact-input" name="fmessage" placeholder="write your message.." rows="4"
+                cols="80"></textarea>
+            <br><br>
+            <input class="contact-input-submit" type="submit" value="send">
         </form>
     </section>
 
 
+
+    
     <hr>
     <footer class="text-align">
         <p>Created with <i class='far fa-kiss-wink-heart' style='color:red'></i> by <a style="text-decoration: none; "

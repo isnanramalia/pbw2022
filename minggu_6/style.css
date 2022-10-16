@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-/* ALL PAGE HTML */
+/* ------------------------------- ALL PAGE HTML ----------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -8,35 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-body {
-    background-color: #CDCFC0;
-    background-image: url(atribut/bgImage.png);
-    background-repeat: no-repeat;
-}
-
-h1 {
-    font-size: 200%;
-}
-
-nav div img {
-    height: 60px;
-}
-
-/* AKHIR ALL PAGE HTML */
-
-
-/* PROJECT */
-
-footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-section {
-    padding-top: 5rem;
-}
-
+/* NAVIGASI */
 nav {
     display: flex;
     height: 80px;
@@ -53,6 +25,10 @@ nav .logo {
     font-size: 35px;
     font-weight: 600;
     font-family: 'Fuzzy Bubbles';
+}
+
+nav div img {
+    height: 60px;
 }
 
 nav ul {
@@ -76,14 +52,19 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-/* PROJECT */
-
-
 nav ul li a.active,
 nav ul li a:hover {
     color: #231F20;
     background: #fff;
 }
+
+/*
+nav ul li a.active,
+nav ul li a:hover {
+    background: none;
+    color: #ccda73;
+}
+*/
 
 nav .menu-btn i {
     color: #fff;
@@ -95,6 +76,34 @@ nav .menu-btn i {
 input[type="checkbox"] {
     display: none;
 }
+
+.text-align {
+    text-align: center;
+}
+
+/* AKHIR NAVIGASI */
+
+body {
+    background-color: #CDCFC0;
+    background-image: url(atribut/bgImage.png);
+    background-repeat: no-repeat;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* ------------------------------- RESPONSIVE PAGE ----------------------------------------*/
 
 @media (max-width: 1000px) {
     nav {
@@ -145,40 +154,10 @@ input[type="checkbox"] {
     }
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    background: none;
-    color: #ccda73;
-}
 
-.text-align {
-    text-align: center;
-}
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: -1;
-    width: 100%;
-    padding: 0 30px;
-    color: #1b1b1b;
-}
 
-.content div {
-    font-size: 40px;
-    font-weight: 700;
-}
-
-/* PROJECT.HTML CSS */
-.body-project {
-    height: 100vh;
-    display: grid;
-    place-items: center center;
-}
-
+/* ------------------------------- PROJECT HTML ----------------------------------------*/
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -208,10 +187,6 @@ nav ul li a:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.text-align {
-    text-align: center;
-}
-
 .img {
     width: 100%;
     display: block;
@@ -228,4 +203,6 @@ nav ul li a:hover {
     padding: 25px;
 }
 
-/* AHKIR PROJECT.HTML CSS */
+
+
+/* ------------------------------- INDEX HTML ----------------------------------------*/
