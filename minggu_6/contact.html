@@ -28,11 +28,11 @@
         <i class="fas fa-bars"></i>
     </label>
     <ul>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="atribut/CV Isna Nur Amalia.pdf">Download CV</a></li>
         <li><a href="project.html">Project</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
@@ -40,20 +40,27 @@
 
 <body>
     <hr />
+
     <section>
-        <h1 class="text-align">Contact me</h1><br><br>
-        <div class="garis-bawah"></div>
-        <form class="text-align" id="contact-form">
-            <label for="name">Name</label><br>
-            <input class="contact-input" type="name" name="fname" placeholder="your name.."><br><br>
-            <label for="email">E-mail</label><br>
-            <input class="contact-input" type="email" name="femail" placeholder="email adress.."><br><br>
-            <label for="message">Message</label><br>
-            <textarea class="contact-input" name="fmessage" placeholder="write your message.." rows="4"
-                cols="80"></textarea>
-            <br><br>
-            <input class="contact-input-submit" type="submit" value="send">
-        </form>
+        <div class="container-contact2">
+            <form action="action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="femail">E-mail</label>
+                <input class="label-email" type="text/number" id="femail" name="email" placeholder="Your email..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
     </section>
 </body>
 
