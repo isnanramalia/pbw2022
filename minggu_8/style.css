@@ -1,0 +1,47 @@
+* {
+box-sizing: border-box;
+}
+
+header {
+    padding: 10px;
+    background-color: wheat;
+    border: 1px solid burlywood;
+    text-align: center;
+}
+
+nav{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    background-color:wheat;
+    border: 1px solid black;
+    display: block;
+    padding: 8px;
+    margin-top: 0px;
+}
+
+article{
+    float: left;
+    width: 80%;
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 0 20px;
+}
+
+details{
+    color: gray;
+}
+
+footer{
+    text-align: center;
+}
+
+span{
+    font-size:1.2em;
+}
+
