@@ -1,1 +1,2 @@
-# pbw2022
+# note 
+- minggu_7 uts
