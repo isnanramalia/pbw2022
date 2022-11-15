@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: lightgreen;
+    padding: 1px;
+}
+.grid-item{
+    background-color: lightgreen;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.header-item{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.nav-item{
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    background-color: lightgreen;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<div class="grid-container">
+  <div class="header-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+  <div class="grid-item item6">6</div>
+  <div class="grid-item item7">7</div>
+  <div class="grid-item item8">8</div>  
+  <div class="grid-item item9">9</div>
+  <div class="nav-item item10">10</div>
+</div>
+
+</body>
+
+</html>
+
+
