@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kuis yang dr minggu12</title>
+</head>
+<body>
+    <form onsubmit="apl.addData()" action="javascript:void(0);" method="post">
+      <input type="text" placeholder="inputkan nama" id="namaMhs">
+      <input type="submit" value="+">
+    </form>
+
+    <div id="counter">
+        <!-- dinamis (javascript) -->
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr><td>Data nama HMTI 2023</td></tr>
+        </thead>
+        <tbody id="daftarNama">
+            <!-- dinamis (javascript) -->
+        </tbody>
+    </table>
+
+    <script>
+        var apl = new function(){
+            this.el = document.getElementById('daftarNama');
+            this.mhs = ['toni', 'tono', 'tini', 'tino'];
+            this.barisAll = function(){
+                var data = '';
+
+                if (this.mhs.length > 0){
+                    for(i = 0; i < this.mhs.length; i++){
+                        data += '<tr>';
+                        data += '<td>' + this.mhs[i] + '' + i;
+                        data += '<button onclick="apl.delData('+i+')">Del</button>';
+                        dat += '<button onclick="apl.updData('+i+')">Upd</button>';
+                        data+= '</td></tr>';
+                    }
+                }
+                this.count(this.mhs.length);
+                return this.el.innerHTML = data;
+            }
+        }
+    </script>
+</body>
+</html>
